@@ -1,70 +1,28 @@
 body {
-    /* Center the app container in the middle of the viewport using flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #2c3e50; /* A dark, calm background color */
-    font-family: 'Arial', sans-serif;
-    color: white;
+    background-color: aquamarine;  
 }
 
-#container {
-    text-align: center;
-    background-color: #34495e; /* Slightly lighter background for the app area */
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    width: 300px;
+.start {
+    position: fixed;
+    top:50%;
+    left:30%;
+
 }
 
-#timer {
-    font-size: 72px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #ecf0f1;
-}
-
-/* Style the divs containing the buttons to use flexbox for alignment */
-.start, .stop, .reset {
-    display: inline-block; /* Aligns the button containers next to each other */
-    margin: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
-    color: white;
-    width: 100px; /* Uniform width for all buttons */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Specific colors for each button */
 #starts {
-    background-color: #2ecc71; /* Green for Start */
-}
-
-#starts:hover {
-    background-color: #27ae60;
+    font-size: 170%;
 }
 
 #stops {
-    background-color: #e74c3c; /* Red for Stop */
-}
-
-#stops:hover {
-    background-color: #c0392b;
+    font-size: 170%;
 }
 
 #resets {
-    background-color: #3498db; /* Blue for Reset */
+    font-size: 170%;
 }
 
-#resets:hover {
-    background-color: #2980b9;
+#timer{
+    
+    display: inline-flex;
+    font-size:270%;
 }
