@@ -5,9 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>timer app</title>
     <link rel="stylesheet" href="style.css">
-</head>
+</head>    
 <body>
-    <p id="countdown">10:00</p>
-    <script src="script.js"></script>
+ 
+     <div class="start">
+        <button onclick="start()" id="starts"> start button</button>                           
+     </div>    
+
+     <div class="stop">
+        <button onclick="stop()" id="stops"> stop button</button>
+     </div>
+
+     <div class="reset">
+        <button onclick="reset()" id="resets"> reset button</button>    
+     </div>
+
+     <div id="container">
+      <h1 id="timer"></h1> 
+     </div>
+
+     <script>
+           let time;
+            let value=0;
+           let output= document.getElementById("timer");  
+           console.log(output) 
+           output.innerHTML=value;   
+
+             
+          
+           function start() {
+             time= setInterval(()=> {
+                  value++; 
+                  console.log(value);
+                  output.innerHTML=value;
+              },1000);         
+           }
+
+           function stop() {
+            console.log(" stop button clicked");
+            clearInterval(time);
+           }
+
+           function reset() {
+            console.log("reset button clicked");
+            clearInterval(time);
+            value=0;
+            output.innerHTML=value;
+
+           }
+
+
+
+     </script>
+    
+     
 </body>
-</html>
+</html>        
